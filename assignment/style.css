@@ -1,0 +1,160 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.top
+{
+    background-color: grey;
+    height: 50%;
+   padding: 120px 120px 30px 120px;
+   text-align: left;
+
+}
+.top h1{
+    font-size:50px;
+    padding-bottom: 20px;
+}
+.top p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.top button{
+    font-size:20px;
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+}
+
+.bottom
+{
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid lightblue;
+}
+ div.card
+{
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+div.card h1{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+div.card p{
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+div.card button{
+    border:none;
+    background-color: grey;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    width: 100px;
+}
+.pp
+{
+    padding-top:10px;
+    padding-left: 120px;
+}
+@media (max-width: 768px)
+{
+    .top
+    {
+        padding: 80px 40px 30px 40px;
+        text-align: center;
+        height: auto;
+    }
+
+    .top h1
+    {
+        font-size: 35px;
+    }
+
+    .top p
+    {
+        font-size: 18px;
+    }
+
+    .bottom
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    div.card
+    {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .pp
+    {
+        padding-left: 40px;
+    }
+}
+
+
+/* Mobile (480px and below) */
+@media (max-width: 480px)
+{
+    .top
+    {
+        padding: 60px 20px 30px 20px;
+    }
+
+    .top h1
+    {
+        font-size: 26px;
+    }
+
+    .top p
+    {
+        font-size: 16px;
+    }
+
+    .top button
+    {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .bottom
+    {
+        padding: 30px 10px;
+    }
+
+    div.card
+    {
+        width: 95%;
+    }
+
+    div.card h1
+    {
+        font-size: 22px;
+    }
+
+    div.card p
+    {
+        font-size: 14px;
+    }
+
+    .pp
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

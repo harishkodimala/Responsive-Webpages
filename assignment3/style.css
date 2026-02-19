@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav
+{
+    background-color: white;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    align-items: center;    
+
+}
+.nav a
+{
+    text-decoration: none;
+    color: rgb(33, 208, 224);
+    font-size: 15px;
+    padding: 20px;
+   
+
+}
+.nav a:hover
+{
+    color: rgb(0, 0, 0);
+}
+
+.main
+{
+    height: 95%;
+    background-color: rgb(223, 41, 132);
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+}
+.main img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.main h1
+{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: white;
+}
+.main p
+{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    padding:30px 20px 30px 20px;
+}
+.card
+{
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.card h1
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+.card p
+{
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.card img
+{
+    width: 100%;
+    height: 200px;
+    padding: 20px 0px 20px 0px;
+}
+
+@media (max-width: 750px)
+{
+    .cards
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card
+    {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .card h3
+    {
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .main h1
+    {
+        font-size: 30px;
+    }
+
+    .main p
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .nav
+    {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .nav a
+    {
+        display: block;
+        padding: 10px;
+    }
+
+    .main h1
+    {
+        font-size: 24px;
+    }
+
+    .main p
+    {
+        font-size: 16px;
+    }
+
+    .card
+    {
+        width: 95%;
+    }
+
+    .card h1
+    {
+        font-size: 22px;
+    }
+
+    .card p
+    {
+        font-size: 14px;
+    }
+}
